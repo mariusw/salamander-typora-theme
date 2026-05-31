@@ -84,3 +84,36 @@ h3, [mdlike='h3'] { color: var(--sal-h3); font-size: 1.2rem; font-weight: 600; }
 h4, [mdlike='h4'] { color: var(--sal-h3); font-size: 1rem;   font-weight: 700; }
 h5, [mdlike='h5'] { color: var(--sal-h3); font-size: 0.9rem; font-weight: 700; }
 h6, [mdlike='h6'] { color: var(--sal-muted); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+
+/* ---- Inline text ---- */
+a { color: var(--sal-link); text-decoration: none; }
+a:hover { color: var(--sal-accent); text-decoration: underline; }
+
+strong, b { color: var(--sal-h1); font-weight: 600; }
+em, i { font-style: italic; }
+del, s { color: var(--sal-muted); text-decoration: line-through; }
+
+mark {
+  background: rgba(214, 131, 27, 0.18);
+  border-bottom: 2px solid rgba(214, 131, 27, 0.7);
+  border-radius: 2px;
+  color: var(--sal-h1);
+  padding: 0 2px;
+}
+
+/* Inline code */
+code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85em;
+  background: var(--sal-bg-code);
+  color: var(--sal-accent);
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  border: 1px solid var(--sal-border);
+}
+
+/* Text selection */
+::selection {
+  background: rgba(214, 131, 27, 0.25);
+  color: var(--sal-h1);
+}
