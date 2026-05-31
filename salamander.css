@@ -204,7 +204,7 @@ pre.md-meta-block {
 
 /* ---- Lists ---- */
 ul, ol {
-  padding-left: 1.5em;
+  padding-left: 2em;
   margin-bottom: 1em;
 }
 
@@ -217,36 +217,42 @@ ol > li::marker { color: var(--sal-accent); }
 ul ul, ol ol, ul ol, ol ul { margin-bottom: 0; }
 
 /* ---- Task lists ---- */
-.md-task-list-item > input {
+#write .task-list {
+  list-style-type: none;
+  padding-left: 2em;
+}
+
+#write .task-list-item {
+  position: relative;
+  padding-left: 0;
+  margin: 0.25rem 0;
+}
+
+#write .task-list-item input[type="checkbox"] {
+  position: absolute;
+  left: -1.3em;
+  top: 0.2em;
+  width: 1em;
+  height: 1em;
   -webkit-appearance: none;
   appearance: none;
-  width: 15px;
-  height: 15px;
   border: 1.5px solid var(--sal-muted);
   border-radius: 3px;
   background: transparent;
-  margin-right: 6px;
-  vertical-align: middle;
-  position: relative;
-  top: -1px;
+  margin: 0;
+  display: inline-block;
+  cursor: default;
 }
 
-.md-task-list-item > input:checked {
+#write .task-list-item input[type="checkbox"]:checked {
   background: var(--sal-accent);
   border-color: var(--sal-accent);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.5 8.5l3 3 6-6' stroke='%230E0A06' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.md-task-list-item > input:checked::after {
-  content: '✓';
-  position: absolute;
-  color: var(--sal-bg);
-  font-size: 10px;
-  font-weight: 700;
-  top: -1px;
-  left: 2px;
-}
-
-.md-task-list-item.task-list-done > p { color: var(--sal-muted); }
+#write .task-list-item.task-list-done > p { color: var(--sal-muted); }
 
 /* ---- Tables ---- */
 table {
@@ -279,14 +285,17 @@ tbody tr:nth-child(even) td { background: var(--sal-bg-alt); }
 .md-table-resize-popover { background: var(--sal-bg-code); border: 1px solid var(--sal-border); }
 
 /* ---- Math (KaTeX / MathJax) ---- */
-.md-math-block {
-  background: var(--sal-bg-code);
-  border: 1px solid var(--sal-border);
+.md-math-block,
+[mdtype="math_block"] {
+  background: var(--sal-bg-code) !important;
+  border: 1px solid var(--sal-border) !important;
   border-radius: 6px;
-  padding: 16px 24px;
+  padding: 16px 24px !important;
+  color: var(--sal-math);
 }
 
-.md-math-block .md-rawblock-container {
+.md-math-block .md-rawblock-container,
+[mdtype="math_block"] .md-rawblock-container {
   background: transparent;
   border: none;
   padding: 0;
@@ -295,8 +304,20 @@ tbody tr:nth-child(even) td { background: var(--sal-bg-alt); }
 .MathJax, .MathJax_Display,
 .katex, .katex-display { color: var(--sal-math); }
 
+/* Hide auto equation numbers */
+.MathJax_Display .MathJax_eqn_num,
+mjx-labels { display: none !important; }
+
+.md-math-block .katex,
+.md-math-block .katex-display,
+.md-math-block .katex-html,
+.md-math-block .katex * { color: var(--sal-math); }
+
 /* Inline math */
-.md-inline-math svg, .md-inline-math { color: var(--sal-math); fill: var(--sal-math); }
+.md-inline-math,
+.md-inline-math svg,
+.md-inline-math .katex,
+.md-inline-math .katex * { color: var(--sal-math); fill: var(--sal-math); }
 
 /* ---- Mermaid diagrams ---- */
 .md-diagram-panel {
