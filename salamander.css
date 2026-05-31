@@ -277,3 +277,47 @@ tbody tr:nth-child(even) td { background: var(--sal-bg-alt); }
 
 /* Table resize handle */
 .md-table-resize-popover { background: var(--sal-bg-code); border: 1px solid var(--sal-border); }
+
+/* ---- Math (KaTeX / MathJax) ---- */
+.md-math-block,
+.md-math-block .md-rawblock-container {
+  background: var(--sal-bg-code);
+  border: 1px solid var(--sal-border);
+  border-radius: 6px;
+  padding: 16px 24px;
+}
+
+.MathJax, .MathJax_Display,
+.katex, .katex-display { color: var(--sal-math); }
+
+/* Inline math */
+.md-inline-math svg, .md-inline-math { color: var(--sal-math); fill: var(--sal-math); }
+
+/* ---- Mermaid diagrams ---- */
+.md-diagram-panel {
+  background: var(--sal-bg-code);
+  border: 1px solid var(--sal-border);
+  border-radius: 6px;
+  padding: 16px;
+}
+
+/* Node shapes */
+.md-diagram-panel svg .node rect,
+.md-diagram-panel svg .node circle,
+.md-diagram-panel svg .node ellipse,
+.md-diagram-panel svg .node polygon {
+  fill: #0A0706;
+  stroke: var(--sal-border-bright);
+  stroke-width: 1.5px;
+}
+
+/* Node labels */
+.md-diagram-panel svg .label,
+.md-diagram-panel svg text { fill: var(--sal-text); color: var(--sal-text); }
+
+/* Edges */
+.md-diagram-panel svg .edgePath path { stroke: var(--sal-accent); }
+.md-diagram-panel svg .arrowheadPath { fill: var(--sal-accent); }
+
+/* Cluster / subgraph */
+.md-diagram-panel svg .cluster rect { fill: var(--sal-bg-code); stroke: var(--sal-border); }
