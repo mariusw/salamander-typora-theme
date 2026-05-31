@@ -239,7 +239,7 @@ ul ul, ol ol, ul ol, ol ul { margin-bottom: 0; }
 .md-task-list-item > input:checked::after {
   content: '✓';
   position: absolute;
-  color: #0E0A06;
+  color: var(--sal-bg);
   font-size: 10px;
   font-weight: 700;
   top: -1px;
@@ -279,12 +279,17 @@ tbody tr:nth-child(even) td { background: var(--sal-bg-alt); }
 .md-table-resize-popover { background: var(--sal-bg-code); border: 1px solid var(--sal-border); }
 
 /* ---- Math (KaTeX / MathJax) ---- */
-.md-math-block,
-.md-math-block .md-rawblock-container {
+.md-math-block {
   background: var(--sal-bg-code);
   border: 1px solid var(--sal-border);
   border-radius: 6px;
   padding: 16px 24px;
+}
+
+.md-math-block .md-rawblock-container {
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 .MathJax, .MathJax_Display,
