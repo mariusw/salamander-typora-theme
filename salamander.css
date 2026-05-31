@@ -247,3 +247,33 @@ ul ul, ol ol, ul ol, ol ul { margin-bottom: 0; }
 }
 
 .md-task-list-item.task-list-done > p { color: var(--sal-muted); }
+
+/* ---- Tables ---- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+  font-size: 0.9rem;
+}
+
+thead { background: var(--sal-bg-table-head); }
+
+th {
+  color: var(--sal-h3);
+  font-weight: 600;
+  font-family: 'Syne', sans-serif;
+  text-align: left;
+  padding: 8px 12px;
+  border: 1px solid var(--sal-border);
+}
+
+td {
+  padding: 6px 12px;
+  border: 1px solid var(--sal-border);
+  color: var(--sal-text);
+}
+
+tbody tr:nth-child(even) td { background: var(--sal-bg-alt); }
+
+/* Table resize handle */
+.md-table-resize-popover { background: var(--sal-bg-code); border: 1px solid var(--sal-border); }
