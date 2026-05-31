@@ -1,8 +1,11 @@
 # Salamander — Typora Theme
 
-A warm dark theme for Typora with burnt orange accents, earthy browns, and cream highlights. Designed to match [blog.salamander.mobi](https://blog.salamander.mobi).
+A warm dark theme for Typora with burnt orange accents, earthy browns, and cream highlights. 
 
 ![Preview](preview/1.png)
+![Preview](preview/2.png)
+![Preview](preview/3.png)
+![Preview](preview/4.png)
 
 ## Features
 
