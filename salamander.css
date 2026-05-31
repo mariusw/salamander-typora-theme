@@ -67,3 +67,20 @@ html, body {
   max-width: none;
   width: 100%;
 }
+
+/* ---- Headings ---- */
+h1, h2, h3, h4, h5, h6,
+[mdlike='h1'], [mdlike='h2'], [mdlike='h3'],
+[mdlike='h4'], [mdlike='h5'], [mdlike='h6'] {
+  font-family: 'Syne', sans-serif;
+  line-height: 1.2;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1, [mdlike='h1'] { color: var(--sal-h1); font-size: 2.2rem; font-weight: 700; }
+h2, [mdlike='h2'] { color: var(--sal-h2); font-size: 1.5rem; font-weight: 600; border-bottom: 1px solid var(--sal-border-bright); padding-bottom: 0.25em; }
+h3, [mdlike='h3'] { color: var(--sal-h3); font-size: 1.2rem; font-weight: 600; }
+h4, [mdlike='h4'] { color: var(--sal-h3); font-size: 1rem;   font-weight: 700; }
+h5, [mdlike='h5'] { color: var(--sal-h3); font-size: 0.9rem; font-weight: 700; }
+h6, [mdlike='h6'] { color: var(--sal-muted); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
