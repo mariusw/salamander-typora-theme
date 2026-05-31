@@ -321,3 +321,53 @@ tbody tr:nth-child(even) td { background: var(--sal-bg-alt); }
 
 /* Cluster / subgraph */
 .md-diagram-panel svg .cluster rect { fill: var(--sal-bg-code); stroke: var(--sal-border); }
+
+/* ---- Sidebar ---- */
+#typora-sidebar {
+  background: var(--side-bar-bg-color);
+  border-right: var(--window-border);
+}
+
+.sidebar-content,
+.file-list-item,
+.file-node-content {
+  color: var(--sal-muted);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+}
+
+.file-list-item:hover .file-node-content,
+.file-node-content:hover {
+  background: var(--item-hover-bg-color);
+  color: var(--item-hover-text-color);
+}
+
+.file-list-item.active .file-node-content,
+.file-node-item.active .file-node-content {
+  background: var(--active-file-bg-color);
+  color: var(--active-file-text-color);
+  border-left: 2px solid var(--active-file-border-color);
+}
+
+.sidebar-search-input {
+  background: var(--sal-bg-code);
+  border: 1px solid var(--sal-border);
+  color: var(--sal-text);
+  border-radius: 4px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* ---- Source mode ---- */
+#typora-source .CodeMirror {
+  background: var(--sal-bg);
+  color: var(--sal-text);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ---- Scrollbars ---- */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--sal-bg); }
+::-webkit-scrollbar-thumb { background: var(--sal-border-bright); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--sal-accent); }
