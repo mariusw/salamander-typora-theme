@@ -29,7 +29,7 @@
   --sal-text:          #CAB292;
   --sal-h1:            #F5E6C8;
   --sal-h2:            #E8D5A9;
-  --sal-h3:            #D6A161;
+  --sal-h3:            #D6A161;  /* used for h3, h4, h5 */
   --sal-accent:        #D6831B;
   --sal-link:          #9A7A58;
   --sal-bq-text:       #B8894A;
@@ -39,19 +39,19 @@
 }
 
 /* ---- Font faces ---- */
-@font-face { font-family: 'Plus Jakarta Sans'; font-style: normal;  font-weight: 300; src: url(salamander/plus-jakarta-sans-300.woff2) format('woff2'); }
-@font-face { font-family: 'Plus Jakarta Sans'; font-style: normal;  font-weight: 400; src: url(salamander/plus-jakarta-sans-400.woff2) format('woff2'); }
-@font-face { font-family: 'Plus Jakarta Sans'; font-style: italic;  font-weight: 400; src: url(salamander/plus-jakarta-sans-400-italic.woff2) format('woff2'); }
-@font-face { font-family: 'Plus Jakarta Sans'; font-style: normal;  font-weight: 500; src: url(salamander/plus-jakarta-sans-500.woff2) format('woff2'); }
-@font-face { font-family: 'Plus Jakarta Sans'; font-style: normal;  font-weight: 600; src: url(salamander/plus-jakarta-sans-600.woff2) format('woff2'); }
-@font-face { font-family: 'Plus Jakarta Sans'; font-style: normal;  font-weight: 700; src: url(salamander/plus-jakarta-sans-700.woff2) format('woff2'); }
+@font-face { font-family: 'Plus Jakarta Sans'; font-style: normal;  font-weight: 300; font-display: block; src: url(salamander/plus-jakarta-sans-300.woff2) format('woff2'); }
+@font-face { font-family: 'Plus Jakarta Sans'; font-style: normal;  font-weight: 400; font-display: block; src: url(salamander/plus-jakarta-sans-400.woff2) format('woff2'); }
+@font-face { font-family: 'Plus Jakarta Sans'; font-style: italic;  font-weight: 400; font-display: block; src: url(salamander/plus-jakarta-sans-400-italic.woff2) format('woff2'); }
+@font-face { font-family: 'Plus Jakarta Sans'; font-style: normal;  font-weight: 500; font-display: block; src: url(salamander/plus-jakarta-sans-500.woff2) format('woff2'); }
+@font-face { font-family: 'Plus Jakarta Sans'; font-style: normal;  font-weight: 600; font-display: block; src: url(salamander/plus-jakarta-sans-600.woff2) format('woff2'); }
+@font-face { font-family: 'Plus Jakarta Sans'; font-style: normal;  font-weight: 700; font-display: block; src: url(salamander/plus-jakarta-sans-700.woff2) format('woff2'); }
 
-@font-face { font-family: 'Syne'; font-style: normal; font-weight: 600; src: url(salamander/syne-600.woff2) format('woff2'); }
-@font-face { font-family: 'Syne'; font-style: normal; font-weight: 700; src: url(salamander/syne-700.woff2) format('woff2'); }
+@font-face { font-family: 'Syne'; font-style: normal; font-weight: 600; font-display: block; src: url(salamander/syne-600.woff2) format('woff2'); }
+@font-face { font-family: 'Syne'; font-style: normal; font-weight: 700; font-display: block; src: url(salamander/syne-700.woff2) format('woff2'); }
 
-@font-face { font-family: 'JetBrains Mono'; font-style: normal;  font-weight: 400; src: url(salamander/jetbrains-mono-400.woff2) format('woff2'); }
-@font-face { font-family: 'JetBrains Mono'; font-style: italic;  font-weight: 400; src: url(salamander/jetbrains-mono-400-italic.woff2) format('woff2'); }
-@font-face { font-family: 'JetBrains Mono'; font-style: normal;  font-weight: 700; src: url(salamander/jetbrains-mono-700.woff2) format('woff2'); }
+@font-face { font-family: 'JetBrains Mono'; font-style: normal;  font-weight: 400; font-display: block; src: url(salamander/jetbrains-mono-400.woff2) format('woff2'); }
+@font-face { font-family: 'JetBrains Mono'; font-style: italic;  font-weight: 400; font-display: block; src: url(salamander/jetbrains-mono-400-italic.woff2) format('woff2'); }
+@font-face { font-family: 'JetBrains Mono'; font-style: normal;  font-weight: 700; font-display: block; src: url(salamander/jetbrains-mono-700.woff2) format('woff2'); }
 
 /* ---- Base ---- */
 html, body {
